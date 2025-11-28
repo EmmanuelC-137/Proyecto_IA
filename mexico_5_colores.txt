@@ -1,0 +1,140 @@
+variables{
+BC
+BCS
+SON
+CHIH
+SIN
+DGO
+COAH
+NL
+TAM
+ZAC
+NAY
+JAL
+AGS
+SLP
+GTO
+QRO
+HGO
+VER
+PUE
+TLAX
+MEX
+CDMX
+MOR
+MICH
+COL
+GRO
+OAX
+CHIS
+TAB
+CAM
+YUC
+QR
+}
+dominios{
+BC={rojo, verde, azul, amarillo, negro}
+BCS={rojo, verde, azul, amarillo, negro}
+SON={rojo, verde, azul, amarillo, negro}
+CHIH={rojo, verde, azul, amarillo, negro}
+SIN={rojo, verde, azul, amarillo, negro}
+DGO={rojo, verde, azul, amarillo, negro}
+COAH={rojo, verde, azul, amarillo, negro}
+NL={rojo, verde, azul, amarillo, negro}
+TAM={rojo, verde, azul, amarillo, negro}
+ZAC={rojo, verde, azul, amarillo, negro}
+NAY={rojo, verde, azul, amarillo, negro}
+JAL={rojo, verde, azul, amarillo, negro}
+AGS={rojo, verde, azul, amarillo, negro}
+SLP={rojo, verde, azul, amarillo, negro}
+GTO={rojo, verde, azul, amarillo, negro}
+QRO={rojo, verde, azul, amarillo, negro}
+HGO={rojo, verde, azul, amarillo, negro}
+VER={rojo, verde, azul, amarillo, negro}
+PUE={rojo, verde, azul, amarillo, negro}
+TLAX={rojo, verde, azul, amarillo, negro}
+MEX={rojo, verde, azul, amarillo, negro}
+CDMX={rojo, verde, azul, amarillo, negro}
+MOR={rojo, verde, azul, amarillo, negro}
+MICH={rojo, verde, azul, amarillo, negro}
+COL={rojo, verde, azul, amarillo, negro}
+GRO={rojo, verde, azul, amarillo, negro}
+OAX={rojo, verde, azul, amarillo, negro}
+CHIS={rojo, verde, azul, amarillo, negro}
+TAB={rojo, verde, azul, amarillo, negro}
+CAM={rojo, verde, azul, amarillo, negro}
+YUC={rojo, verde, azul, amarillo, negro}
+QR={rojo, verde, azul, amarillo, negro}
+}
+restricciones{
+BC!=BCS
+BC!=SON
+BCS!=SON
+SON!=CHIH
+SON!=SIN
+CHIH!=SIN
+CHIH!=DGO
+CHIH!=COAH
+SIN!=DGO
+SIN!=NAY
+DGO!=COAH
+DGO!=ZAC
+DGO!=NAY
+COAH!=NL
+COAH!=ZAC
+COAH!=SLP
+NL!=TAM
+NL!=SLP
+NL!=ZAC
+TAM!=SLP
+TAM!=VER
+ZAC!=SLP
+ZAC!=AGS
+ZAC!=JAL
+ZAC!=NAY
+NAY!=JAL
+JAL!=AGS
+JAL!=GTO
+JAL!=MICH
+JAL!=COL
+AGS!=GTO
+SLP!=GTO
+SLP!=QRO
+SLP!=HGO
+SLP!=VER
+GTO!=QRO
+GTO!=MICH
+QRO!=HGO
+QRO!=MEX
+QRO!=MICH
+HGO!=VER
+HGO!=PUE
+HGO!=TLAX
+HGO!=MEX
+VER!=PUE
+VER!=OAX
+VER!=CHIS
+VER!=TAB
+PUE!=TLAX
+PUE!=MEX
+PUE!=CDMX
+PUE!=MOR
+PUE!=GRO
+PUE!=OAX
+TLAX!=MEX
+MEX!=CDMX
+MEX!=MOR
+MEX!=MICH
+MEX!=GRO
+CDMX!=MOR
+MOR!=GRO
+MICH!=COL
+MICH!=GRO
+GRO!=OAX
+OAX!=CHIS
+CHIS!=TAB
+TAB!=CAM
+CAM!=YUC
+CAM!=QR
+YUC!=QR
+}

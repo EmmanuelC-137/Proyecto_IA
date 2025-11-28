@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="ColoreoMapa">
+    <resource name="FSharpSignatureData.ColoreoMapa" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedData.ColoreoMapa" action="remove"></resource>
+    <resource name="FSharpSignatureDataB.ColoreoMapa" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedDataB.ColoreoMapa" action="remove"></resource>
+    <resource name="FSharpOptimizationData.ColoreoMapa" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedData.ColoreoMapa" action="remove"></resource>
+    <resource name="FSharpOptimizationDataB.ColoreoMapa" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedDataB.ColoreoMapa" action="remove"></resource>
+    <resource name="FSharpOptimizationInfo.ColoreoMapa" action="remove"></resource>
+    <resource name="FSharpSignatureInfo.ColoreoMapa" action="remove"></resource>
+  </assembly>
+</linker>

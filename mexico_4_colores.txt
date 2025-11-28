@@ -1,0 +1,140 @@
+variables{
+BC
+BCS
+SON
+CHIH
+SIN
+DGO
+COAH
+NL
+TAM
+ZAC
+NAY
+JAL
+AGS
+SLP
+GTO
+QRO
+HGO
+VER
+PUE
+TLAX
+MEX
+CDMX
+MOR
+MICH
+COL
+GRO
+OAX
+CHIS
+TAB
+CAM
+YUC
+QR
+}
+dominios{
+BC={rojo, verde, azul, amarillo}
+BCS={rojo, verde, azul, amarillo}
+SON={rojo, verde, azul, amarillo}
+CHIH={rojo, verde, azul, amarillo}
+SIN={rojo, verde, azul, amarillo}
+DGO={rojo, verde, azul, amarillo}
+COAH={rojo, verde, azul, amarillo}
+NL={rojo, verde, azul, amarillo}
+TAM={rojo, verde, azul, amarillo}
+ZAC={rojo, verde, azul, amarillo}
+NAY={rojo, verde, azul, amarillo}
+JAL={rojo, verde, azul, amarillo}
+AGS={rojo, verde, azul, amarillo}
+SLP={rojo, verde, azul, amarillo}
+GTO={rojo, verde, azul, amarillo}
+QRO={rojo, verde, azul, amarillo}
+HGO={rojo, verde, azul, amarillo}
+VER={rojo, verde, azul, amarillo}
+PUE={rojo, verde, azul, amarillo}
+TLAX={rojo, verde, azul, amarillo}
+MEX={rojo, verde, azul, amarillo}
+CDMX={rojo, verde, azul, amarillo}
+MOR={rojo, verde, azul, amarillo}
+MICH={rojo, verde, azul, amarillo}
+COL={rojo, verde, azul, amarillo}
+GRO={rojo, verde, azul, amarillo}
+OAX={rojo, verde, azul, amarillo}
+CHIS={rojo, verde, azul, amarillo}
+TAB={rojo, verde, azul, amarillo}
+CAM={rojo, verde, azul, amarillo}
+YUC={rojo, verde, azul, amarillo}
+QR={rojo, verde, azul, amarillo}
+}
+restricciones{
+BC!=BCS
+BC!=SON
+BCS!=SON
+SON!=CHIH
+SON!=SIN
+CHIH!=SIN
+CHIH!=DGO
+CHIH!=COAH
+SIN!=DGO
+SIN!=NAY
+DGO!=COAH
+DGO!=ZAC
+DGO!=NAY
+COAH!=NL
+COAH!=ZAC
+COAH!=SLP
+NL!=TAM
+NL!=SLP
+NL!=ZAC
+TAM!=SLP
+TAM!=VER
+ZAC!=SLP
+ZAC!=AGS
+ZAC!=JAL
+ZAC!=NAY
+NAY!=JAL
+JAL!=AGS
+JAL!=GTO
+JAL!=MICH
+JAL!=COL
+AGS!=GTO
+SLP!=GTO
+SLP!=QRO
+SLP!=HGO
+SLP!=VER
+GTO!=QRO
+GTO!=MICH
+QRO!=HGO
+QRO!=MEX
+QRO!=MICH
+HGO!=VER
+HGO!=PUE
+HGO!=TLAX
+HGO!=MEX
+VER!=PUE
+VER!=OAX
+VER!=CHIS
+VER!=TAB
+PUE!=TLAX
+PUE!=MEX
+PUE!=CDMX
+PUE!=MOR
+PUE!=GRO
+PUE!=OAX
+TLAX!=MEX
+MEX!=CDMX
+MEX!=MOR
+MEX!=MICH
+MEX!=GRO
+CDMX!=MOR
+MOR!=GRO
+MICH!=COL
+MICH!=GRO
+GRO!=OAX
+OAX!=CHIS
+CHIS!=TAB
+TAB!=CAM
+CAM!=YUC
+CAM!=QR
+YUC!=QR
+}

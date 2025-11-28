@@ -1,0 +1,140 @@
+variables{
+BC
+BCS
+SON
+CHIH
+SIN
+DGO
+COAH
+NL
+TAM
+ZAC
+NAY
+JAL
+AGS
+SLP
+GTO
+QRO
+HGO
+VER
+PUE
+TLAX
+MEX
+CDMX
+MOR
+MICH
+COL
+GRO
+OAX
+CHIS
+TAB
+CAM
+YUC
+QR
+}
+dominios{
+BC={rojo, verde}
+BCS={rojo, verde}
+SON={rojo, verde}
+CHIH={rojo, verde}
+SIN={rojo, verde}
+DGO={rojo, verde}
+COAH={rojo, verde}
+NL={rojo, verde}
+TAM={rojo, verde}
+ZAC={rojo, verde}
+NAY={rojo, verde}
+JAL={rojo, verde}
+AGS={rojo, verde}
+SLP={rojo, verde}
+GTO={rojo, verde}
+QRO={rojo, verde}
+HGO={rojo, verde}
+VER={rojo, verde}
+PUE={rojo, verde}
+TLAX={rojo, verde}
+MEX={rojo, verde}
+CDMX={rojo, verde}
+MOR={rojo, verde}
+MICH={rojo, verde}
+COL={rojo, verde}
+GRO={rojo, verde}
+OAX={rojo, verde}
+CHIS={rojo, verde}
+TAB={rojo, verde}
+CAM={rojo, verde}
+YUC={rojo, verde}
+QR={rojo, verde}
+}
+restricciones{
+BC!=BCS
+BC!=SON
+BCS!=SON
+SON!=CHIH
+SON!=SIN
+CHIH!=SIN
+CHIH!=DGO
+CHIH!=COAH
+SIN!=DGO
+SIN!=NAY
+DGO!=COAH
+DGO!=ZAC
+DGO!=NAY
+COAH!=NL
+COAH!=ZAC
+COAH!=SLP
+NL!=TAM
+NL!=SLP
+NL!=ZAC
+TAM!=SLP
+TAM!=VER
+ZAC!=SLP
+ZAC!=AGS
+ZAC!=JAL
+ZAC!=NAY
+NAY!=JAL
+JAL!=AGS
+JAL!=GTO
+JAL!=MICH
+JAL!=COL
+AGS!=GTO
+SLP!=GTO
+SLP!=QRO
+SLP!=HGO
+SLP!=VER
+GTO!=QRO
+GTO!=MICH
+QRO!=HGO
+QRO!=MEX
+QRO!=MICH
+HGO!=VER
+HGO!=PUE
+HGO!=TLAX
+HGO!=MEX
+VER!=PUE
+VER!=OAX
+VER!=CHIS
+VER!=TAB
+PUE!=TLAX
+PUE!=MEX
+PUE!=CDMX
+PUE!=MOR
+PUE!=GRO
+PUE!=OAX
+TLAX!=MEX
+MEX!=CDMX
+MEX!=MOR
+MEX!=MICH
+MEX!=GRO
+CDMX!=MOR
+MOR!=GRO
+MICH!=COL
+MICH!=GRO
+GRO!=OAX
+OAX!=CHIS
+CHIS!=TAB
+TAB!=CAM
+CAM!=YUC
+CAM!=QR
+YUC!=QR
+}
