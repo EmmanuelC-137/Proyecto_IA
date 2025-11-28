@@ -11,71 +11,67 @@ FECHA: 28 de Noviembre de 2025
 1. DESCRIPCIÓN
 -----------------------------------------------------------------------------
 Este programa resuelve el problema de satisfacción de restricciones (PSR) para
-el coloreo de mapas. Implementa dos métodos de solución:
+el coloreo de mapas de México. Implementa:
+- Algoritmo de Vuelta Atrás (Backtracking).
+- Heurísticas: Mínimos Valores Restantes (MRV) y Grado Heurístico.
 
-1. Vuelta Atrás (Backtracking) simple.
-2. Vuelta Atrás con Heurísticas (Mínimos Valores Restantes + Grado Heurístico).
-
-El programa lee un archivo de texto con las variables, dominios y restricciones,
-y determina si existe una asignación de colores válida.
-
------------------------------------------------------------------------------
-2. REQUERIMIENTOS DEL SISTEMA
------------------------------------------------------------------------------
-- .NET SDK (Versión 8.0 o superior, probado en .NET 10.0).
-- Sistema Operativo: Windows, Linux o macOS.
+El software ha sido desarrollado en F# utilizando la plataforma .NET moderna
+(versión 10.0), lo cual ofrece mayor rendimiento y compatibilidad que las 
+versiones antiguas de Mono.
 
 -----------------------------------------------------------------------------
-3. INSTRUCCIONES PARA GENERAR EL EJECUTABLE
+2. REQUERIMIENTOS
 -----------------------------------------------------------------------------
-Para compilar el código fuente y generar los binarios, abra una terminal en
-la carpeta del proyecto (donde está el archivo .fsproj) y ejecute:
-
-    dotnet build -c Release
-
-El archivo ejecutable (.exe) se generará en la ruta:
-    .\bin\Release\net10.0\ColoreoMapa.exe
+- .NET SDK (Versión 8.0, 9.0 o 10.0).
+- Compatible con Windows, Linux y macOS.
 
 -----------------------------------------------------------------------------
-4. EJECUCIÓN DESDE LÍNEA DE COMANDOS
+3. INSTRUCCIONES PARA GENERAR EL EJECUTABLE (.EXE)
 -----------------------------------------------------------------------------
-El programa acepta dos argumentos: el archivo de entrada y el modo de solución.
+Para compilar el código fuente y generar un ejecutable optimizado (Release),
+abra una terminal en la carpeta del proyecto y ejecute:
 
-Sintaxis:
-    dotnet run -- <archivo_entrada> <modo>
+    dotnet publish -c Release
 
-Donde <modo> puede ser:
+Esto creará el archivo 'ColoreoMapa.exe' en la carpeta:
+    /bin/Release/net10.0/publish/
+
+**NOTA: El comando dotnet "publish -c Release" se debe ejecutar en la carpeta donde se encuentra
+        el proyecto, en este caso ../ColoreoMapa/
+
+**NOTA 2: Este paso solo es necesario si no se encuentra el
+        archivo en la ruta /bin/Release/net10.0/publish/
+-----------------------------------------------------------------------------
+4. EJECUCIÓN
+-----------------------------------------------------------------------------
+Existen dos formas de ejecutar el programa:
+
+OPCIÓN A (Recomendada para desarrollo - Compila y ejecuta):
+    dotnet run -- <archivo.txt> <modo>
+
+OPCIÓN B (Ejecutar el .exe generado en el paso 3):
+    1. Navegue a la carpeta del ejecutable:
+       cd bin/Release/net10.0/publish
+    2. Copie el archivo de texto (ej. mexico_4_colores.txt) a esta carpeta.
+    3. Ejecute:
+       ColoreoMapa.exe <archivo.txt> <modo>
+
+**NOTA: Este paso solo es necesario si no se encuentra el/los
+        archivo(s) en la ruta /bin/Release/net10.0/publish/
+
+-----------------------------------------------------------------------------
+5. PARÁMETROS
+-----------------------------------------------------------------------------
+El <modo> puede ser:
     - simple        (Para Backtracking estándar)
     - heuristicas   (Para Backtracking con MRV y Grado)
 
-EJEMPLOS DE USO:
-
-A) Para resolver el mapa de México con 3 colores usando heurísticas:
-    dotnet run -- mexico_3_colores.txt heuristicas
-
-B) Para resolver el mapa de México con 4 colores usando búsqueda simple:
-    dotnet run -- mexico_4_colores.txt simple
+EJEMPLO:
+    dotnet run -- mexico_4_colores.txt heuristicas
 
 -----------------------------------------------------------------------------
-5. ARCHIVOS INCLUIDOS EN LA ENTREGA
+ARCHIVOS INCLUIDOS
 -----------------------------------------------------------------------------
-1. Program.fs             - Código fuente en F#.
-2. ColoreoMapa.fsproj     - Archivo de proyecto .NET.
-3. README.txt             - Instrucciones de uso.
-4. mexico_2_colores.txt   - Caso de prueba (Sin solución).
-5. mexico_3_colores.txt   - Caso de prueba (Sin solución).
-6. mexico_4_colores.txt   - Caso de prueba (Con solución).
-7. mexico_5_colores.txt   - Caso de prueba (Con solución).
-
------------------------------------------------------------------------------
-NOTAS SOBRE LA SALIDA
------------------------------------------------------------------------------
-Si la solución existe, el programa imprimirá:
-- El método utilizado.
-- "Existe solucion Verdadero".
-- El número de asignaciones (pasos) realizados.
-- La lista de variables con su color asignado.
-
-Si no existe solución:
-- "Existe solucion Falso".
-- El número de asignaciones realizadas antes de determinar la imposibilidad.
+- Código fuente (Program.fs)
+- Archivo de proyecto (ColoreoMapa.fsproj)
+- Archivos de prueba (mexico_2_colores.txt, mexico_3_colores.txt, etc.)
