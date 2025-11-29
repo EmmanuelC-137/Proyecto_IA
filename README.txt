@@ -81,7 +81,7 @@ REPOSITORIO (RESPALDO)
 Se adjunta enlace al repositorio en GitHub como respaldo en caso de que algún
 archivo se corrompa en el proceso de entrega.
 
-Link: https://github.com/EmmanuelC-137/Proyecto_IA.git
+Link: https://github.com/EmmanuelC-137/Proyecto_IA
 
 Para clonar:
     git clone https://github.com/EmmanuelC-137/Proyecto_IA.git 
