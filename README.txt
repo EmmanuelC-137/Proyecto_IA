@@ -36,11 +36,9 @@ abra una terminal en la carpeta del proyecto y ejecute:
 Esto creará el archivo 'ColoreoMapa.exe' en la carpeta:
     /bin/Release/net10.0/publish/
 
-**NOTA: El comando dotnet "publish -c Release" se debe ejecutar en la carpeta donde se encuentra
-        el proyecto, en este caso ../ColoreoMapa/
+**NOTA: El comando 'dotnet publish' se debe ejecutar dentro de la carpeta 
+        del proyecto (donde está el archivo ColoreoMapa.fsproj).
 
-**NOTA 2: Este paso solo es necesario si no se encuentra el
-        archivo en la ruta /bin/Release/net10.0/publish/
 -----------------------------------------------------------------------------
 4. EJECUCIÓN
 -----------------------------------------------------------------------------
@@ -56,8 +54,8 @@ OPCIÓN B (Ejecutar el .exe generado en el paso 3):
     3. Ejecute:
        ColoreoMapa.exe <archivo.txt> <modo>
 
-**NOTA: Este paso solo es necesario si no se encuentra el/los
-        archivo(s) en la ruta /bin/Release/net10.0/publish/
+**NOTA: Para la Opción B, es indispensable copiar el archivo de texto a la
+        misma carpeta donde se encuentra el .exe generado.
 
 -----------------------------------------------------------------------------
 5. PARÁMETROS
@@ -74,4 +72,18 @@ ARCHIVOS INCLUIDOS
 -----------------------------------------------------------------------------
 - Código fuente (Program.fs)
 - Archivo de proyecto (ColoreoMapa.fsproj)
-- Archivos de prueba (mexico_2_colores.txt, mexico_3_colores.txt, etc.)
+- Archivos de prueba (mexico_2_colores.txt, mexico_3_colores.txt, 
+  mexico_4_colores.txt, mexico_5_colores.txt)
+
+-----------------------------------------------------------------------------
+REPOSITORIO (RESPALDO)
+-----------------------------------------------------------------------------
+Se adjunta enlace al repositorio en GitHub como respaldo en caso de que algún
+archivo se corrompa en el proceso de entrega.
+
+Link: https://github.com/EmmanuelC-137/Proyecto_IA.git
+
+Para clonar:
+    git clone https://github.com/EmmanuelC-137/Proyecto_IA.git 
+    
+(Asegúrese de tener Git instalado para que la terminal reconozca el comando).
